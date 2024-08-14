@@ -1,1 +1,1 @@
-https://lostdaffy.github.io/Tourism/
+https://lostdaffy.github.io/tourism/
