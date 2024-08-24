@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
 }
 
 a {
@@ -12,132 +15,212 @@ a {
 html,
 body {
     width: 100%;
+    height: 100%;
 }
 
 .main_bg_color {
-    background: #34666f;
-}
-
-
-::selection {
-    background: #00c09082;
-}
-
-.h-vh-100 {
-    height: 100vh;
+    background: #00695C;
 }
 
 /* Navbar */
 
-.nav {
-    height: 80px;
-    width: 100%;
-    background-color: #ffffff89;
+.bg-main {
+    background-color: #00bcde;
 }
 
-.nav>div>h2 {
-    color: #34666f;
+.navbar {
+    background-color: #000000b3;
 }
 
-.links {
-    align-self: center;
+.navbar-brand {
+    color: #00563B;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
-.links li {
-    list-style: none;
+.navbar-brand:hover {
+    color: #00563B;
 }
 
-.links li a {
-    padding-right: 1.5rem;
-    font-size: 16px;
-    color: #3a3838;
-    text-transform: uppercase;
+
+.nav-link {
+    color: #b5b5b5;
+    font-size: 17px;
     letter-spacing: 1px;
     font-weight: 600;
 }
 
-.links li a:hover {
-    color: #3a383889;
+.nav-link:hover {
+    color: #00563B;
 }
 
-.login_btn a {
-    color: #34666f;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
+.book_btn a {
+    background-color: #00563B;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid #00563B;
+    transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+.book_btn a:hover {
+    color: #00563B;
+    background-color: transparent;
+    border: 2px solid #00563B;
+    transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00563B;
+}
+
+.navbar-toggler:hover {
+    color: #00563B;
+    background-color: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
 
 /* /navbar */
 
 
 /* Landing Section */
-.main {
-    display: flex;
-    gap: 2rem;
-    background-image: url(../images/bgu.jpg);
+.hero {
+    background-image: linear-gradient(#00000089, #00000089), url(../images/laishram.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.text_part {
-    color: #000;
-    width: 50%;
-    padding-top: 12rem;
-}
 
-.text_part .heading {
+.hero>div>div>span {
+    color: #fff;
     font-size: 2rem;
-    font-weight: 400;
-    color: #777777;
+    font-weight: 600;
 }
 
-.img_part {
-    width: 50%;
+.hero>div>div>h1 {
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 800;
+    padding: 0 8rem 0 8rem;
 }
 
-.img_part .img img {
-    width: 100%;
-}
-
-
-.text_part h1 {
-    font-size: 5em;
-    font-weight: 700;
-}
-
-.text_part h1 span {
+.hero>div>div>h1 span {
     color: #fff;
 }
 
 .text_part p {
+    font-size: 15px;
+    letter-spacing: 1px;
     color: #777777;
     margin-bottom: 2rem;
 }
 
+.hero-btn a {
+    color: fff;
+    background-color: #00563B;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero>div>div {
+        width: 100% !important;
+        text-align: center;
+        background-color: #ffffff2b;
+    }
+
+    .hero>div>div>h1 {
+        font-size: 2rem;
+    }
+
+    .hero>div>div>p {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hero>div>div {
+        width: 100% !important;
+        text-align: center;
+        background-color: #ffffff2b;
+        margin-top: 4rem;
+    }
+
+    .hero>div>div>h1 {
+        font-size: 4rem;
+    }
+
+    .hero>div>div>span {
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+}
+
+
 /* /Landing Section */
+
+/* Search */
+
+.search {
+    margin-top: -4rem;
+}
+
+.search-btn {
+    background-color: #00563B;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+/* /Search */
 
 
 /* secound section  */
+
+
 .second_sec {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a.button_1 {
-    font-size: 15px;
-    line-height: 2em;
-    letter-spacing: .2em;
-    font-weight: 500;
+.button_1 {
     margin-top: 2rem;
-    padding: 12px 45px;
     color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0.8rem 2.8rem;
+    border-radius: 30px;
+    border: 2px solid #00695C;
+}
+
+.button_1:hover {
+    color: #00695C;
+    background-color: transparent;
+    border: 2px solid #00695C;
+    transition: all 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .buddha_text h2 {
-    border-left: 5px solid #34666f;
+    border-left: 5px solid #00695C;
 }
 
 
@@ -152,7 +235,7 @@ a.button_1 {
 
 
 .card_border {
-    border: 5px dotted #34666f;
+    border: 5px dotted #00695C;
     margin: 2.7rem 2rem;
     padding: 1rem 1rem;
 }
@@ -160,7 +243,7 @@ a.button_1 {
 .card_heading h3 {
     font-size: 3rem;
     font-weight: 500;
-    border-left: 5px solid #34666f;
+    border-left: 5px solid #00695C;
 }
 
 
@@ -256,7 +339,7 @@ a.button_1 {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #34666f;
+    background-color: #00695C;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -332,7 +415,7 @@ a.button_1 {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #34666f;
+    color: #00695C;
     background-color: #ffffffa9;
     padding: 0.5rem 1rem;
 }
@@ -357,7 +440,7 @@ a.button_1 {
     inset: auto auto 40px 30px;
     color: inherit;
     text-decoration: none;
-    color: #34666f;
+    color: #00695C;
 }
 
 .dest_card p {
@@ -418,11 +501,11 @@ a.button_1 {
     display: block;
     width: 10%;
     padding-top: 10px;
-    border-bottom: 3px solid #34666f;
+    border-bottom: 3px solid #00695C;
 }
 
 .highlight-text {
-    color: #34666f;
+    color: #00695C;
 }
 
 .hightlight-contact-info {
@@ -450,7 +533,7 @@ a.button_1 {
 
 .form-input:focus,
 textarea:focus {
-    outline: 1.5px solid #34666f;
+    outline: 1.5px solid #00695C;
 }
 
 .form-input,
@@ -511,8 +594,8 @@ textarea {
 button,
 .submit-btn {
     background: transparent;
-    border: 1px solid #34666f;
-    color: #34666f;
+    border: 1px solid #00695C;
+    color: #00695C;
     border-radius: 15px;
     padding: 5px 20px;
     text-transform: uppercase;
@@ -522,13 +605,13 @@ button:hover,
 .submit-btn:hover,
 button:focus,
 .submit-btn:focus {
-    background: #34666f;
+    background: #00695C;
     outline: 0;
     color: #eee;
 }
 
 .error {
-    color: #34666f;
+    color: #00695C;
 }
 
 
@@ -539,7 +622,7 @@ button:focus,
 
 .login_r {
     width: 50%;
-    background-color: #34666f11;
+    background-color: #00695C11;
 }
 
 .social a:nth-of-type(1) {
@@ -603,8 +686,8 @@ button:focus,
 }
 
 .sign_btn {
-    border: 2px solid #34666f;
-    background-color: #34666f;
+    border: 2px solid #00695C;
+    background-color: #00695C;
     padding: 0.6rem 10rem;
     border-radius: 5px;
     color: #ffff;
@@ -614,7 +697,7 @@ button:focus,
 }
 
 .backup a {
-    color: #34666f;
+    color: #00695C;
     font-weight: 600;
 }
 
