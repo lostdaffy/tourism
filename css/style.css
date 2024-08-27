@@ -16,6 +16,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background-color: #f3f3f3;
 }
 
 .main_bg_color {
@@ -268,12 +269,49 @@ body {
 /* /secound section */
 
 
+/* about us */
+.about-us{
+    margin: 10rem 0;
+}
+
+.about-text {
+    margin-left: -5rem;
+}
+
+.about-text span{
+    color: #20bf6b;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-text h2{
+    font-size: 2.5vw;
+    font-weight: 800
+}
+
+.about-btn a {
+    background-color: #20bf6b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+}
+
+.about-icon{
+    background-color: #20bf6b;
+    color: #fff;
+}
+
+/* /about us */
+
 /* third section */
 
 .item {
-   border-bottom: 1px solid #20bf6b;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-   margin-left: 2rem;
+    border-bottom: 1px solid #20bf6b;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 2rem;
 }
 
 .category {
