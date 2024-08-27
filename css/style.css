@@ -19,6 +19,14 @@ body {
     background-color: #f3f3f3;
 }
 
+#preloader {
+    background: #18191b url(../images/loader.svg) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 .main_bg_color {
     background: #20bf6b;
 }
@@ -270,7 +278,7 @@ body {
 
 
 /* about us */
-.about-us{
+.about-us {
     margin: 10rem 0;
 }
 
@@ -278,14 +286,14 @@ body {
     margin-left: -5rem;
 }
 
-.about-text span{
+.about-text span {
     color: #20bf6b;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: 2.5vw;
     font-weight: 800
 }
@@ -299,7 +307,7 @@ body {
     border-radius: 30px;
 }
 
-.about-icon{
+.about-icon {
     background-color: #20bf6b;
     color: #fff;
 }
