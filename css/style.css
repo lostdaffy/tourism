@@ -116,7 +116,7 @@ body {
 /* /navbar */
 
 
-/* Landing Section */
+/* Hero Section */
 .hero {
     background-image: linear-gradient(#00000089, #00000089), url(../images/laishram.jpg);
     background-position: center;
@@ -189,7 +189,7 @@ body {
 }
 
 
-/* /Landing Section */
+/* /Hero Section */
 
 /* Search */
 
@@ -308,11 +308,203 @@ body {
 }
 
 .about-icon {
-    background-color: #20bf6b;
-    color: #fff;
+    color: #20bf6b;
 }
 
 /* /about us */
+
+/* Destination cards */
+.destination {
+    margin: 10rem 0;
+}
+
+.desti-heading span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #20bf6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.desti-heading h4 {
+    color: #252d31;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.effect-zoe {
+    position: relative;
+    overflow: hidden;
+    max-height: 310px;
+    min-height: 310px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.effect-zoe img {
+    position: relative;
+    display: block;
+    height: 310px;
+    object-fit: cover;
+
+}
+
+.cards-text {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.effect-zoe .cards-text::before,
+.effect-zoe .cards-text::after {
+    pointer-events: none;
+}
+
+.effect-zoe .cards-text,
+.effect-zoe .cards-text>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.effect-zoe .cards-text>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.effect-zoe h2 {
+    color: #20bf6b;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.effect-zoe h2,
+figure p {
+    margin: 0;
+}
+
+.effect-zoe p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+.effect-zoe .cards-text {
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 3.75em;
+    background: #000000a7;
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.effect-zoe h2 {
+    float: left;
+}
+
+.icon-links a {
+    float: right;
+    color: #20bf6b;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.effect-zoe:hover .icon-links a:hover,
+.effect-zoe:hover .icon-links a:focus {
+    color: #252d31;
+}
+
+.effect-zoe p.description {
+    position: absolute;
+    bottom: 4em;
+    left: 0;
+    padding: 2em;
+    margin: 2rem;
+    color: #fff;
+    text-transform: none;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.35s;
+    background: #00000077;
+}
+
+.effect-zoe h2,
+.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+}
+
+.icon-links a span::before {
+    display: inline-block;
+    padding: 8px 10px;
+    font-family: 'feathericons';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye::before {
+    content: '\e000';
+}
+
+.icon-paper-clip::before {
+    content: '\e001';
+}
+
+.icon-heart::before {
+    content: '\e024';
+}
+
+.effect-zoe h2 {
+    display: inline-block;
+}
+
+.effect-zoe:hover p.description {
+    opacity: 1;
+}
+
+.effect-zoe:hover .cards-text,
+.effect-zoe:hover h2,
+.effect-zoe:hover p.icon-links a {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.effect-zoe:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.effect-zoe:hover p.icon-links a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.effect-zoe:hover p.icon-links a:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.effect-zoe:hover p.icon-links a:first-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/* /Destination cards */
+
 
 /* third section */
 
