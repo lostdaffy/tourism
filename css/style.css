@@ -118,7 +118,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(#00000089, #00000089), url(../images/laishram.jpg);
+    background-image: linear-gradient(#00000089, #00000089), url(../images/laishram.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -581,7 +581,7 @@ figure p {
 }
 
 .parallax_two {
-    background-image: url(../images/kahdjka.jpg);
+    background-image: url(../images/kahdjka.webp);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
